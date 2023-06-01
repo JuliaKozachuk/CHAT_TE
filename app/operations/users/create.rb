@@ -1,8 +1,7 @@
 module Users
   class Create < ApplicationOperation
     def self.call(params)
-      permitted_params = params.permit(:telephone, :email, :username, :avatar, :bio)
-      user = User.new(permitted_params)
+      user = User.new(params)
 
       if user.save
         response_object(object: user) 
