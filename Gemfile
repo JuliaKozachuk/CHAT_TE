@@ -31,6 +31,8 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 gem 'phonelib'
 
+gem 'dry-validation'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
